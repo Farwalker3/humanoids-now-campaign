@@ -21,10 +21,11 @@ OK from that party.** Early conversations are not endorsements. This page curren
   written OK to show the logo and a JD Humanoid photo on the campaign.
 - Product image page: https://www.ez-robot.com/store/p5/humanoid-robotics-kit.html
 
-### Raccoon AI (on-robot model — you have permission for the model)
-- ⚠️ Multiple companies use "Raccoon AI." Confirm the exact one you have permission from and get the
-  correct logo + the scope of what you may say publicly (model use ≠ logo-display permission).
-- Candidates seen: raccoonai.tech / raccoonai.co (RAM-1, ACE SDK, Bengaluru) · raccoon-ai.com.
+### Raccoon AI — CONFIRMED: https://raccoonai.tech (general-purpose collaborative AI agent)
+- Logo added: `assets/raccoonai_logo.png` (official wordmark from raccoonai.tech/logo.png). Shown on the page.
+- You have permission for their **model**; ⚠️ confirm that permission also covers **displaying their
+  logo** publicly and describing the relationship as stated. If not, ask them for explicit OK (usually a quick yes).
+- Framing on page: their agent model powers the robot's "coworker" tasks (notes/reminders/tools) — accurate.
 
 ## Deliberately excluded
 - **Enchanted Tools** — left OFF the page entirely per your note (under-the-table / pending). Add only
