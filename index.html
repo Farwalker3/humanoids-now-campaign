@@ -117,6 +117,12 @@ footer b{color:#fff}
 .vmedia{position:relative;border-radius:14px;overflow:hidden;background:#000}
 .vmedia video{width:100%;display:block}
 .illus{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,.65);color:#cfe;font-size:10.5px;padding:5px 8px;line-height:1.3}
+.interop{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:16px 0}
+@media(max-width:760px){.interop{grid-template-columns:1fr}}
+.icat{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.icat h4{font-size:14px;margin:0 0 8px;color:var(--ink);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:3px 10px;font-size:12px;color:#333}
 </style>
 </head>
 <body>
@@ -288,6 +294,22 @@ footer b{color:#fff}
         </div>
       </div>
       <div class="perm"><b>Before launch:</b> confirm you have written OK to display each logo/photo and to describe the relationship as stated, then drop the official asset into <code>assets/</code> and replace the matching slot. See <code>COLLABORATOR_ASSETS.md</code> for exact source URLs and swap instructions.</div>
+
+      <h2>Interoperable with almost everything</h2>
+      <p>It&rsquo;s open and <b>modular by design</b> &mdash; it speaks the standards the whole ecosystem already uses (ROS&nbsp;2, MCP, USB/CAN, URDF, standard files &amp; connectors), so it plugs into the models, parts, robots and tools you already have. A taste of the compatibility surface (full list in our open docs):</p>
+      <div class="interop">
+        <div class="icat"><h4>&#129504; LLMs &amp; AI</h4><div class="chips"><span class="chip">GPT</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">Llama</span><span class="chip">Mistral</span><span class="chip">Raccoon&nbsp;AI</span><span class="chip">Ollama</span><span class="chip">Whisper</span><span class="chip">YOLO</span><span class="chip">LeRobot</span><span class="chip">GR00T</span><span class="chip">any OpenAI-API model</span></div></div>
+        <div class="icat"><h4>&#128268; Protocols &amp; web</h4><div class="chips"><span class="chip">ROS&nbsp;2</span><span class="chip">MCP</span><span class="chip">REST/WebSocket</span><span class="chip">gRPC</span><span class="chip">MQTT</span><span class="chip">Matter</span><span class="chip">Home&nbsp;Assistant</span><span class="chip">WebRTC</span><span class="chip">any web server</span></div></div>
+        <div class="icat"><h4>&#129470; Actuators / muscles</h4><div class="chips"><span class="chip">Dynamixel</span><span class="chip">Feetech</span><span class="chip">ODrive</span><span class="chip">moteus</span><span class="chip">steppers</span><span class="chip">hobby servos</span><span class="chip">QDD actuators</span></div></div>
+        <div class="icat"><h4>&#128064; Sensors</h4><div class="chips"><span class="chip">RealSense</span><span class="chip">Luxonis&nbsp;OAK</span><span class="chip">ZED</span><span class="chip">RPLidar</span><span class="chip">BNO085&nbsp;IMU</span><span class="chip">force/tactile</span><span class="chip">mic&nbsp;arrays</span></div></div>
+        <div class="icat"><h4>&#129513; Compute / brains</h4><div class="chips"><span class="chip">Jetson</span><span class="chip">Raspberry&nbsp;Pi</span><span class="chip">Coral&nbsp;TPU</span><span class="chip">ESP32</span><span class="chip">Teensy</span><span class="chip">x86</span></div></div>
+        <div class="icat"><h4>&#128425; 3D print &amp; parts</h4><div class="chips"><span class="chip">Bambu</span><span class="chip">Prusa</span><span class="chip">Voron/RepRap</span><span class="chip">STL/STEP/3MF</span><span class="chip">2020&nbsp;extrusion</span><span class="chip">GT2&nbsp;belts</span><span class="chip">M3&nbsp;hardware</span><span class="chip">bearings</span></div></div>
+        <div class="icat"><h4>&#129471; Prosthetics</h4><div class="chips"><span class="chip">Open-Source&nbsp;Leg</span><span class="chip">Humotech</span><span class="chip">EMG&nbsp;/&nbsp;OpenBCI</span><span class="chip">pyramid&nbsp;adapters</span><span class="chip">powered&nbsp;knee/ankle</span></div></div>
+        <div class="icat"><h4>&#128188; Work &amp; the coworker stack</h4><div class="chips"><span class="chip">MCP&nbsp;servers</span><span class="chip">Slack</span><span class="chip">Discord</span><span class="chip">Teams</span><span class="chip">Zoom</span><span class="chip">Google&nbsp;Workspace</span><span class="chip">M365</span><span class="chip">Zapier</span></div></div>
+        <div class="icat"><h4>&#129302; Other robots</h4><div class="chips"><span class="chip">anything&nbsp;ROS&nbsp;2</span><span class="chip">EZ-Robot</span><span class="chip">Unitree</span><span class="chip">UR&nbsp;/&nbsp;xArm&nbsp;/&nbsp;Franka</span><span class="chip">InMoov</span><span class="chip">Reachy</span></div></div>
+        <div class="icat"><h4>&#128187; Languages &amp; SDKs</h4><div class="chips"><span class="chip">Python</span><span class="chip">C++</span><span class="chip">Rust</span><span class="chip">JavaScript</span><span class="chip">ROS&nbsp;2</span><span class="chip">Arduino</span><span class="chip">MicroPython</span></div></div>
+      </div>
+      <p style="font-size:13px;color:var(--muted)">Compatible <b>by design</b> &mdash; because it&rsquo;s standards-based and open, not a closed box. (We present this as a compatibility surface, not a claim that every item is individually lab-validated yet.)</p>
 
       <h2>What your funding builds</h2>
       <p>We&rsquo;ve taken the software as far as an 8&nbsp;GB laptop can go. Funding turns the open platform into the <b>first physical Humanoids Now robot</b> and scales the compute to build it well.</p>
