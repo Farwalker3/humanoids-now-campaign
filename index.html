@@ -95,6 +95,17 @@ footer{background:var(--tech);color:#9fb3c8;margin-top:60px;padding:40px 0;font-
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px}
 footer b{color:#fff}
 .disc{color:var(--muted);font-size:12px;max-width:760px;margin:22px auto 0}
+/* collaborators + diagram */
+.collabs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0 6px}
+@media(max-width:760px){.collabs{grid-template-columns:1fr}}
+.collab{border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.collab .slot{height:70px;border:1.5px dashed #cfd6dd;border-radius:10px;display:grid;place-items:center;color:#9aa4ad;font-size:12px;text-align:center;background:var(--soft)}
+.collab .nm{font-weight:900;font-size:16px;letter-spacing:-.01em}
+.collab .tag{color:var(--ks-dark);font-size:12px;font-weight:700}
+.collab p{font-size:14px;color:#333;margin:0}
+.collab a{font-size:13px;font-weight:700}
+.svgwrap{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:8px;margin:18px 0}
+.perm{background:#eef6ff;border:1px solid #cfe3fb;border-radius:12px;padding:12px 15px;font-size:13px;color:#234;margin:10px 0 0}
 </style>
 </head>
 <body>
@@ -116,7 +127,7 @@ footer b{color:#fff}
   <header class="proj">
     <span class="pill">ROBOTICS · OPEN HARDWARE</span>
     <h1>Humanoids Now: open, anatomically-accurate robots built from real anatomy and real physiology.</h1>
-    <p class="sub">We&rsquo;re building humanoid and animal-form robots the honest way &mdash; real scanned skeletons, muscles that actually pull, nerves that actually fire &mdash; and releasing the whole platform open-source. Help us build the first physical one.</p>
+    <p class="sub">We&rsquo;re building open, <b>modular</b> humanoid and animal-form robots the honest way &mdash; real scanned skeletons, muscles that actually pull, nerves that actually fire &mdash; and because the limbs are anatomically real and swappable, the same platform doubles as an <b>open testbed for prosthetics and neurobionics</b>. Help us build the first physical one.</p>
   </header>
 
   <div class="grid">
@@ -197,6 +208,56 @@ footer b{color:#fff}
       <p style="color:var(--muted);font-size:14px;margin-top:-6px">A real mouse skeleton, reconstructed from scan data — the kind of accurate body a robot should be built on.</p>
 
       <div class="note"><b>Our honesty pledge (and Kickstarter&rsquo;s rule).</b> Every image on this page is our own real work &mdash; renders of real scan data and real simulation output. No CGI of a finished robot that doesn&rsquo;t exist yet. When we show you the physical prototype, it will be the physical prototype.</div>
+
+      <h2>Modular by design &mdash; a testbed for prosthetics</h2>
+      <p>Because our robots are built from <b>real anatomy</b>, their limbs are not just parts &mdash; they&rsquo;re accurate, instrumented, swappable modules that share a common interface. A powered knee, ankle, or arm can be mounted on a repeatable, biomimetic body, run through real motion, and measured. That makes a lifelike robot the ideal <b>open platform for prosthetics and neurobionics R&amp;D</b>: the same reason the field has rallied around shared, open hardware.</p>
+
+      <div class="svgwrap">
+      <svg viewBox="0 0 720 240" width="100%" role="img" aria-label="Modular platform diagram">
+        <defs><style>.b{fill:#0e1726}.g{fill:#05ce78}.t{fill:#fff;font:700 13px -apple-system,Arial}.tm{fill:#cfe;font:600 11px -apple-system,Arial}.ln{stroke:#05ce78;stroke-width:2}</style></defs>
+        <rect x="300" y="70" width="120" height="100" rx="14" class="b"/>
+        <text x="360" y="112" text-anchor="middle" class="t">Anatomically</text>
+        <text x="360" y="130" text-anchor="middle" class="t">real body</text>
+        <text x="360" y="150" text-anchor="middle" class="tm">shared interface bus</text>
+        <line x1="300" y1="120" x2="180" y2="60"  class="ln"/><line x1="300" y1="120" x2="180" y2="120" class="ln"/><line x1="300" y1="120" x2="180" y2="180" class="ln"/>
+        <line x1="420" y1="120" x2="540" y2="60"  class="ln"/><line x1="420" y1="120" x2="540" y2="120" class="ln"/><line x1="420" y1="120" x2="540" y2="180" class="ln"/>
+        <g>
+          <rect x="60" y="40"  width="120" height="40" rx="10" class="g"/><text x="120" y="65" text-anchor="middle" class="t">Prosthetic knee</text>
+          <rect x="60" y="100" width="120" height="40" rx="10" class="g"/><text x="120" y="125" text-anchor="middle" class="t">Prosthetic ankle</text>
+          <rect x="60" y="160" width="120" height="40" rx="10" class="g"/><text x="120" y="185" text-anchor="middle" class="t">Prosthetic arm</text>
+          <rect x="540" y="40"  width="120" height="40" rx="10" class="g"/><text x="600" y="65" text-anchor="middle" class="t">Edge-AI brain</text>
+          <rect x="540" y="100" width="120" height="40" rx="10" class="g"/><text x="600" y="125" text-anchor="middle" class="t">Sensors / eyes</text>
+          <rect x="540" y="160" width="120" height="40" rx="10" class="g"/><text x="600" y="185" text-anchor="middle" class="t">Smart-servo muscles</text>
+        </g>
+      </svg>
+      </div>
+
+      <h2>Conversations &amp; open platforms we build on</h2>
+      <p>We stand on open robotics, and we&rsquo;re grateful for early conversations with people doing the real work. These are <b>early-stage relationships</b>, not endorsements &mdash; we describe them plainly, and each logo/photo below is added only with that party&rsquo;s permission.</p>
+      <div class="collabs">
+        <div class="collab">
+          <div class="slot">official logo &mdash; add with permission</div>
+          <div class="tag">PROSTHETICS · OPEN HARDWARE</div>
+          <div class="nm">U-M Neurobionics Lab</div>
+          <p>Home of the <b>Open-Source Leg</b> &mdash; the open, modular bionic-limb platform that inspires our prosthetics-testbed approach. We&rsquo;ve spoken with the lab&rsquo;s director about prosthetics.</p>
+          <a href="https://neurobionics.robotics.umich.edu/research/wearable-robotics/open-source-leg/" target="_blank" rel="noopener">neurobionics.robotics.umich.edu &rarr;</a>
+        </div>
+        <div class="collab">
+          <div class="slot">official logo / JD Humanoid photo &mdash; add with permission</div>
+          <div class="tag">MODULAR HUMANOID KIT</div>
+          <div class="nm">EZ-Robot</div>
+          <p>Makers of the <b>JD Humanoid</b> kit (servos, camera, ARC software) &mdash; an accessible modular humanoid platform we&rsquo;re exploring for rapid prototyping and education. We&rsquo;ve spoken with CEO Dennis Kambeitz.</p>
+          <a href="https://www.ez-robot.com" target="_blank" rel="noopener">ez-robot.com &rarr;</a>
+        </div>
+        <div class="collab">
+          <div class="slot">official logo &mdash; add with permission</div>
+          <div class="tag">ON-ROBOT INTELLIGENCE</div>
+          <div class="nm">Raccoon AI</div>
+          <p>We have <b>permission to build on Raccoon AI&rsquo;s model</b> for on-robot intelligence &mdash; a fitting name for a project with an animal-form heart.</p>
+          <a href="#" target="_blank" rel="noopener">confirm entity &amp; link &rarr;</a>
+        </div>
+      </div>
+      <div class="perm"><b>Before launch:</b> confirm you have written OK to display each logo/photo and to describe the relationship as stated, then drop the official asset into <code>assets/</code> and replace the matching slot. See <code>COLLABORATOR_ASSETS.md</code> for exact source URLs and swap instructions.</div>
 
       <h2>What your funding builds</h2>
       <p>We&rsquo;ve taken the software as far as an 8&nbsp;GB laptop can go. Funding turns the open platform into the <b>first physical Humanoids Now robot</b> and scales the compute to build it well.</p>
